@@ -50,6 +50,13 @@ $businessName = BusinessNameGenerator::generate('playful', 'color');
 echo $businessName;  // Example output: "Cheerful Blue"
 ```
 
+### Generating Multiple Names
+```php
+// Generate a business name using playful adjectives and color-related nouns
+$businessName = BusinessNameGenerator::generateMultiple('playful', 'color', 2);
+echo $businessName;  // Example output: ["Cheerful Blue", "Red Trading]
+```
+
 
 ## Adjective and Noun Categories
 ### Adjective Categories
