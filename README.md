@@ -27,7 +27,7 @@ return [
 
 ```php
 use Designbycode\LaravelBusinessNameGenerator\Facades\BusinessNameGenerator;
-$businessName = BusinessNameGenerator::generate();
+$businessName = BusinessNameGenerator::generate()->first();
 ```
 
 ### Custom Adjectives and Nouns
@@ -37,7 +37,7 @@ You can also provide your own lists of adjectives and nouns:
 $customAdjectives = ["Cool", "Amazing", "Super"];
 $customNouns = ["Shop", "Hub", "Center"];
 
-$generator = BusinessNameGenerator::generate($customAdjectives, $customNouns);
+$generator = BusinessNameGenerator::generate($customAdjectives, $customNouns)->first();
 echo $businessName;  // Example output: "Super Shop"
 ```
 
@@ -46,14 +46,14 @@ You can generate business names based on specific categories of adjectives and n
 
 ```php 
 // Generate a business name using playful adjectives and color-related nouns
-$businessName = BusinessNameGenerator::generate('playful', 'color');
+$businessName = BusinessNameGenerator::generate('playful', 'color')->first();
 echo $businessName;  // Example output: "Cheerful Blue"
 ```
 
 ### Generating Multiple Names
 ```php
 // Generate a business name using playful adjectives and color-related nouns
-$businessName = BusinessNameGenerator::generateMultiple('playful', 'color', 2);
+$businessName = BusinessNameGenerator::amount(2)->generate()->get();
 echo $businessName;  // Example output: ["Cheerful Blue", "Red Trading]
 ```
 
