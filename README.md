@@ -5,6 +5,8 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/designbycode/laravel-business-name-generator/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/designbycode/laravel-business-name-generator/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/designbycode/laravel-business-name-generator.svg?style=flat-square)](https://packagist.org/packages/designbycode/laravel-business-name-generator)
 
+Laravel Business Name Generator is a Laravel package that generates business names based on a combination of adjectives and nouns. It provides a flexible and customizable way to generate business names that can be used for various purposes.
+
 
 ## Installation
 

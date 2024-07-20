@@ -1,6 +1,6 @@
 {
     "name": "designbycode/laravel-business-name-generator",
-    "description": "This is my package laravel-business-name-generator",
+    "description": "Laravel Business Name Generator is a Laravel package that generates business names based on a combination of adjectives and nouns. It provides a flexible and customizable way to generate business names that can be used for various purposes.",
     "keywords": [
         "designbycode",
         "laravel",
